@@ -283,9 +283,6 @@ function(bucketname,
         }
         accelerate <- FALSE
         dualstack <- FALSE
-        if (!is.null(region) && region != "") {
-            base_url <- paste0(region, ".", base_url)
-        }
     } else {
         # if accelerate = TRUE, must use virtual paths
         if (isTRUE(accelerate)) {
